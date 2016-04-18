@@ -1,0 +1,307 @@
+@import "normalize";
+@import "susy";
+
+/* Clearfix Mixin */
+@mixin cf {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+//Susy Map
+$susy:(
+  columns: 12,
+  gutters:1/4,
+  container: 1270px,
+  debug:(image:hide),
+  global-box-sizing: border-box
+);
+
+@include border-box-sizing;
+
+.wrap {
+  @include container();
+}
+
+/* Variables */
+/* Colors */
+$body-color: rgb(143, 214, 200);
+$header-color: rgba(143, 214, 200, 0.6);
+$color1: rgba(250, 231, 179, 0.8);
+$color2: rgba(250, 231, 179, 0.8);
+$color3: rgba(240, 150, 113, 0.8);
+$color4: rgba(234, 159, 195, 0.8);
+
+/* Breakpoints */
+$bp-s: 425px;
+$bp-m: 770px;
+$bp-l: 1100px;
+
+
+/*Starter Css */
+body{
+  background-image: url(/images/bg-pattern.jpg);
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+li,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+//Header Css
+
+header {
+  width: 100%;
+  height: 5vh;
+  background-color:$header-color;
+}
+.logo {
+  padding: 0 0 0 20px;
+}
+.nav-list{
+  display: block;
+  float: right;
+  li{
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    padding-right: 20px;
+    a{
+      background: transparent;
+      text-decoration: none;
+      color: white;
+      font-size: 1em;
+    }
+    a:hover{
+      color: white;
+    }
+  }
+}
+
+//Hero Image
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: -1;
+  img{
+  width: 100%;
+  height: auto;
+  }
+}
+
+//Greeting Content
+.greeting{
+  margin-top: 57vh;
+  margin-bottom: 65px;
+  h1{
+    display: block;
+
+    padding: 50px 0px;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  p{
+      width:  span(11 of 12);
+      padding-left: span(1 of 12 wide first);
+      text-align: center;
+  }
+}
+//Image Break Banner
+
+.image-break{
+  margin: 10vh 0;
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+}
+
+.image-background{
+  height: 300px;
+  width: 100%;
+  background-image: url('/images/wedding photo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+//First Set of Content
+.service-1-padding{
+  padding-top: 15vh;
+}
+.service-1{
+  @include span(5 of 12 first);
+  margin-left: span(1 of 12 wide first);
+  h2{
+    width: span(2 of 5 first);
+    padding-left: span(1 wide);
+  }
+  p{
+    width: span(5 of 5);
+    display: inline-block;
+  }
+}
+.service-1-img{
+  @include span(4 of 12 last);
+  margin-right: span(1 of 12 wide last);
+}
+
+.service-2-padding{
+  padding: 15vh 0;
+}
+.service-2{
+  @include span(5 of 12 last);
+  margin-right: span(1 of 12 wide last);
+  h2{
+    width: span(2 of 5 last);
+    padding-left: span(1 wide);
+  }
+  p{
+    width: span(5 of 5);
+    display: inline-block;
+  }
+}
+
+.service-2-img{
+  @include span(4 of 12 first);
+  margin-left: span(1 of 12 wide first);
+}
+
+//Blurb Content
+
+.blurb-section{
+  @include cf;
+  width: span(12 of 12);
+}
+@include nested(12) {
+  .blurb{
+    @include span(3);
+    &:nth-child(4n){
+      @include last;
+    }
+  }
+}
+.blurb-padding{
+  padding: 15vh 0;
+}
+//Contact Us Section
+
+.contact-us{
+  @include span(10 of 12);
+  margin-left: span(1 of 12 wide first);
+  padding: 5vh 0;
+}
+.contact-title, .contact-p{
+  text-align: center;
+}
+
+//Footer Section
+
+footer{
+  height: 6vh;
+  width: 100%;
+  background-color: gray;
+}
+.trademark{
+  display: inline;
+  float: left;
+  padding-left: 120px;
+}
+.social-media{
+  display:flex;
+  float: right;
+  padding-right: 100px;
+  padding-top: 15px;
+}
+.social-link{
+  padding-top: 15px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+//Cell Phone Breakpoint
+
+@media (max-width:$bp-s) {
+  h1.greeting{
+    font-size: 3rem;
+  }
+  .service{
+    @include span(10 of 12 first);
+    padding-left: span(1 of 12 wide first);
+    h2{
+      width: span(10 of 10 first);
+
+      text-align: center;
+    }
+    p{
+      width: span(10 of 10);
+      padding-left: span(1 wide);
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  .service-1-img{
+    @include span(11 of 12);
+    padding-left: span(1 of 12 wide first);
+  }
+  .service-2{
+    @include span(10 of 12 first);
+    padding-left: span(1 of 12 wide first);
+    h2{
+      width: span(10 of 10 first);
+
+      text-align: center;
+    }
+    p{
+      width: span(10 of 10);
+      padding-left: span(1 wide);
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  .service-2-img{
+    @include span(11 of 12);
+    padding-left: span(1 of 12 wide first)
+  }
+  .blurb-section{
+    @include cf;
+    width: span(12 of 12);
+  }
+  .blurb{
+    @include span(10 of 12);
+    margin-bottom: gutter();
+    height: auto;
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+      &:nth-child(4n){
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  .social-media{
+    display: none;
+  }
+}
