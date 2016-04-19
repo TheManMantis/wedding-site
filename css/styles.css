@@ -439,14 +439,14 @@ table {
 /* Colors */
 /* Breakpoints */
 /*Starter Css */
-/* line 44, ../scss/styles.scss */
+/* line 51, ../scss/styles.scss */
 body {
-  background-image: url(/images/bg-pattern.jpg);
+  background-image: url(/images/background-pattern.jpg);
   padding: 0;
   margin: 0;
 }
 
-/* line 49, ../scss/styles.scss */
+/* line 56, ../scss/styles.scss */
 ul,
 ol,
 li,
@@ -457,87 +457,103 @@ h3 {
   padding: 0;
 }
 
-/* line 58, ../scss/styles.scss */
+/* line 65, ../scss/styles.scss */
 li {
   list-style: none;
   text-decoration: none;
 }
 
-/* line 62, ../scss/styles.scss */
+/* line 69, ../scss/styles.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 69, ../scss/styles.scss */
+/* line 76, ../scss/styles.scss */
 header {
   width: 100%;
   height: 5vh;
   background-color: rgba(143, 214, 200, 0.6);
 }
 
-/* line 74, ../scss/styles.scss */
+/* line 81, ../scss/styles.scss */
 .logo {
   padding: 0 0 0 20px;
 }
 
-/* line 77, ../scss/styles.scss */
+/* line 84, ../scss/styles.scss */
 .nav-list {
   display: block;
   float: right;
 }
-/* line 80, ../scss/styles.scss */
+/* line 87, ../scss/styles.scss */
 .nav-list li {
   list-style: none;
   display: inline;
   text-decoration: none;
   padding-right: 20px;
 }
-/* line 85, ../scss/styles.scss */
+/* line 92, ../scss/styles.scss */
 .nav-list li a {
   background: transparent;
   text-decoration: none;
   color: white;
   font-size: 1em;
 }
-/* line 91, ../scss/styles.scss */
+/* line 98, ../scss/styles.scss */
 .nav-list li a:hover {
   color: white;
 }
 
-/* line 99, ../scss/styles.scss */
+/* line 106, ../scss/styles.scss */
 .hero {
   position: absolute;
   top: 0;
   left: 0px;
   z-index: -1;
 }
-/* line 104, ../scss/styles.scss */
+/* line 111, ../scss/styles.scss */
 .hero img {
   width: 100%;
   height: auto;
 }
 
-/* line 111, ../scss/styles.scss */
+/* line 118, ../scss/styles.scss */
+.board-1 {
+  margin-top: 54vh;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.73);
+}
+
+/* line 122, ../scss/styles.scss */
+.board-2 {
+  margin-bottom: -6px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.73);
+}
+
+/* line 127, ../scss/styles.scss */
 .greeting {
-  margin-top: 57vh;
   margin-bottom: 65px;
 }
-/* line 114, ../scss/styles.scss */
+/* line 129, ../scss/styles.scss */
 .greeting h1 {
+  font-family: "Pacifico", cursive;
+  color: white;
   display: block;
   padding: 50px 0px;
   font-size: 5rem;
   text-align: center;
 }
-/* line 122, ../scss/styles.scss */
+/* line 137, ../scss/styles.scss */
 .greeting p {
+  font-family: "Poiret One", cursive;
+  color: white;
+  font-weight: bold;
   width: 91.52542%;
   padding-left: 8.47458%;
   text-align: center;
 }
 
-/* line 130, ../scss/styles.scss */
+/* line 148, ../scss/styles.scss */
 .image-break {
   margin: 10vh 0;
   width: 100%;
@@ -545,7 +561,7 @@ header {
   min-height: 150px;
 }
 
-/* line 137, ../scss/styles.scss */
+/* line 155, ../scss/styles.scss */
 .image-background {
   height: 300px;
   width: 100%;
@@ -555,30 +571,34 @@ header {
   background-size: cover;
 }
 
-/* line 147, ../scss/styles.scss */
+/* line 165, ../scss/styles.scss */
 .service-1-padding {
   padding-top: 15vh;
 }
 
-/* line 150, ../scss/styles.scss */
+/* line 168, ../scss/styles.scss */
 .service-1 {
   width: 40.67797%;
   float: left;
   margin-right: 1.69492%;
   margin-left: 8.47458%;
 }
-/* line 153, ../scss/styles.scss */
+/* line 171, ../scss/styles.scss */
 .service-1 h2 {
+  font-family: "Pacifico", cursive;
+  color: white;
   width: 37.5%;
   padding-left: 8.47458%;
 }
-/* line 157, ../scss/styles.scss */
+/* line 177, ../scss/styles.scss */
 .service-1 p {
   width: 100%;
   display: inline-block;
+  font-family: "Poiret One", cursive;
+  color: white;
 }
 
-/* line 162, ../scss/styles.scss */
+/* line 184, ../scss/styles.scss */
 .service-1-img {
   width: 32.20339%;
   float: right;
@@ -586,30 +606,34 @@ header {
   margin-right: 8.47458%;
 }
 
-/* line 167, ../scss/styles.scss */
+/* line 189, ../scss/styles.scss */
 .service-2-padding {
   padding: 15vh 0;
 }
 
-/* line 170, ../scss/styles.scss */
+/* line 192, ../scss/styles.scss */
 .service-2 {
   width: 40.67797%;
   float: right;
   margin-right: 0;
   margin-right: 8.47458%;
 }
-/* line 173, ../scss/styles.scss */
+/* line 195, ../scss/styles.scss */
 .service-2 h2 {
   width: 37.5%;
   padding-left: 8.47458%;
+  font-family: "Pacifico", cursive;
+  color: white;
 }
-/* line 177, ../scss/styles.scss */
+/* line 201, ../scss/styles.scss */
 .service-2 p {
   width: 100%;
   display: inline-block;
+  font-family: "Poiret One", cursive;
+  color: white;
 }
 
-/* line 183, ../scss/styles.scss */
+/* line 209, ../scss/styles.scss */
 .service-2-img {
   width: 32.20339%;
   float: left;
@@ -617,7 +641,7 @@ header {
   margin-left: 8.47458%;
 }
 
-/* line 190, ../scss/styles.scss */
+/* line 216, ../scss/styles.scss */
 .blurb-section {
   width: 100%;
 }
@@ -628,24 +652,24 @@ header {
   display: table;
 }
 
-/* line 195, ../scss/styles.scss */
+/* line 221, ../scss/styles.scss */
 .blurb {
   width: 23.72881%;
   float: left;
   margin-right: 1.69492%;
 }
-/* line 197, ../scss/styles.scss */
+/* line 223, ../scss/styles.scss */
 .blurb:nth-child(4n) {
   float: right;
   margin-right: 0;
 }
 
-/* line 202, ../scss/styles.scss */
+/* line 228, ../scss/styles.scss */
 .blurb-padding {
   padding: 15vh 0;
 }
 
-/* line 207, ../scss/styles.scss */
+/* line 233, ../scss/styles.scss */
 .contact-us {
   width: 83.05085%;
   float: left;
@@ -654,26 +678,26 @@ header {
   padding: 5vh 0;
 }
 
-/* line 212, ../scss/styles.scss */
+/* line 238, ../scss/styles.scss */
 .contact-title, .contact-p {
   text-align: center;
 }
 
-/* line 218, ../scss/styles.scss */
+/* line 244, ../scss/styles.scss */
 footer {
   height: 6vh;
   width: 100%;
-  background-color: gray;
+  background-color: rgba(226, 20, 169, 0.09);
 }
 
-/* line 223, ../scss/styles.scss */
+/* line 249, ../scss/styles.scss */
 .trademark {
   display: inline;
   float: left;
   padding-left: 120px;
 }
 
-/* line 228, ../scss/styles.scss */
+/* line 254, ../scss/styles.scss */
 .social-media {
   display: flex;
   float: right;
@@ -681,7 +705,7 @@ footer {
   padding-top: 15px;
 }
 
-/* line 234, ../scss/styles.scss */
+/* line 260, ../scss/styles.scss */
 .social-link {
   padding-top: 15px;
   padding-right: 20px;
@@ -689,24 +713,24 @@ footer {
 }
 
 @media (max-width: 425px) {
-  /* line 243, ../scss/styles.scss */
+  /* line 269, ../scss/styles.scss */
   h1.greeting {
     font-size: 3rem;
   }
 
-  /* line 246, ../scss/styles.scss */
+  /* line 272, ../scss/styles.scss */
   .service {
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%;
     padding-left: 8.47458%;
   }
-  /* line 249, ../scss/styles.scss */
+  /* line 275, ../scss/styles.scss */
   .service h2 {
     width: 100%;
     text-align: center;
   }
-  /* line 254, ../scss/styles.scss */
+  /* line 280, ../scss/styles.scss */
   .service p {
     width: 100%;
     padding-left: 8.47458%;
@@ -714,7 +738,7 @@ footer {
     text-align: center;
   }
 
-  /* line 262, ../scss/styles.scss */
+  /* line 288, ../scss/styles.scss */
   .service-1-img {
     width: 91.52542%;
     float: left;
@@ -722,19 +746,19 @@ footer {
     padding-left: 8.47458%;
   }
 
-  /* line 266, ../scss/styles.scss */
+  /* line 292, ../scss/styles.scss */
   .service-2 {
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%;
     padding-left: 8.47458%;
   }
-  /* line 269, ../scss/styles.scss */
+  /* line 295, ../scss/styles.scss */
   .service-2 h2 {
     width: 100%;
     text-align: center;
   }
-  /* line 274, ../scss/styles.scss */
+  /* line 300, ../scss/styles.scss */
   .service-2 p {
     width: 100%;
     padding-left: 8.47458%;
@@ -742,7 +766,7 @@ footer {
     text-align: center;
   }
 
-  /* line 282, ../scss/styles.scss */
+  /* line 308, ../scss/styles.scss */
   .service-2-img {
     width: 91.52542%;
     float: left;
@@ -750,7 +774,7 @@ footer {
     padding-left: 8.47458%;
   }
 
-  /* line 286, ../scss/styles.scss */
+  /* line 312, ../scss/styles.scss */
   .blurb-section {
     width: 100%;
   }
@@ -761,7 +785,7 @@ footer {
     display: table;
   }
 
-  /* line 290, ../scss/styles.scss */
+  /* line 316, ../scss/styles.scss */
   .blurb {
     width: 83.05085%;
     float: left;
@@ -773,14 +797,14 @@ footer {
     margin-right: auto;
     float: none;
   }
-  /* line 298, ../scss/styles.scss */
+  /* line 324, ../scss/styles.scss */
   .blurb:nth-child(4n) {
     float: none;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 304, ../scss/styles.scss */
+  /* line 330, ../scss/styles.scss */
   .social-media {
     display: none;
   }

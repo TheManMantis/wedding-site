@@ -34,6 +34,13 @@ $color2: rgba(250, 231, 179, 0.8);
 $color3: rgba(240, 150, 113, 0.8);
 $color4: rgba(234, 159, 195, 0.8);
 
+//Fonts
+
+$p-font:'Poiret One', cursive;
+$h1-font: 'Lobster', cursive;
+$h2-font: 'Pacifico', cursive;
+$h3-font: 'Dancing Script', cursive;
+
 /* Breakpoints */
 $bp-s: 425px;
 $bp-m: 770px;
@@ -42,7 +49,7 @@ $bp-l: 1100px;
 
 /*Starter Css */
 body{
-  background-image: url(/images/bg-pattern.jpg);
+  background-image: url(/images/background-pattern.jpg);
   padding: 0;
   margin: 0;
 }
@@ -106,23 +113,34 @@ header {
   height: auto;
   }
 }
+//boards
 
+.board-1{
+  margin-top: 54vh;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.73);
+}
+.board-2{
+  margin-bottom: -6px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.73);
+}
 //Greeting Content
 .greeting{
-  margin-top: 57vh;
   margin-bottom: 65px;
   h1{
+    font-family: $h2-font;
+    color: white;
     display: block;
-
     padding: 50px 0px;
     font-size: 5rem;
     text-align: center;
   }
-
   p{
-      width:  span(11 of 12);
-      padding-left: span(1 of 12 wide first);
-      text-align: center;
+    font-family: $p-font;
+    color: white;
+    font-weight: bold;
+    width:  span(11 of 12);
+    padding-left: span(1 of 12 wide first);
+    text-align: center;
   }
 }
 //Image Break Banner
@@ -151,12 +169,16 @@ header {
   @include span(5 of 12 first);
   margin-left: span(1 of 12 wide first);
   h2{
+    font-family: $h2-font;
+    color: white;
     width: span(2 of 5 first);
     padding-left: span(1 wide);
   }
   p{
     width: span(5 of 5);
     display: inline-block;
+    font-family: $p-font;
+    color: white;
   }
 }
 .service-1-img{
@@ -173,10 +195,14 @@ header {
   h2{
     width: span(2 of 5 last);
     padding-left: span(1 wide);
+    font-family: $h2-font;
+    color: white;
   }
   p{
     width: span(5 of 5);
     display: inline-block;
+    font-family: $p-font;
+    color: white;
   }
 }
 
@@ -218,7 +244,7 @@ header {
 footer{
   height: 6vh;
   width: 100%;
-  background-color: gray;
+  background-color: rgba(226, 20, 169, 0.09);
 }
 .trademark{
   display: inline;
