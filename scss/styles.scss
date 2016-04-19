@@ -29,10 +29,6 @@ $susy:(
 /* Colors */
 $body-color: rgb(143, 214, 200);
 $header-color: rgba(143, 214, 200, 0.6);
-$color1: rgba(250, 231, 179, 0.8);
-$color2: rgba(250, 231, 179, 0.8);
-$color3: rgba(240, 150, 113, 0.8);
-$color4: rgba(234, 159, 195, 0.8);
 
 //Fonts
 
@@ -70,7 +66,24 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+h1{
+  font-family: $h2-font;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+}
+h2{
+  font-family: $h3-font;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+p{
+  font-family: $p-font;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
 //Header Css
 
 header {
@@ -108,10 +121,6 @@ header {
   top: 0;
   left: 0px;
   z-index: -1;
-  img{
-  width: 100%;
-  height: auto;
-  }
 }
 //boards
 
@@ -126,23 +135,8 @@ header {
 //Greeting Content
 .greeting{
   margin-bottom: 65px;
-  h1{
-    font-family: $h2-font;
-    color: white;
-    display: block;
-    padding: 50px 0px;
-    font-size: 5rem;
-    text-align: center;
-  }
-  p{
-    font-family: $p-font;
-    color: white;
-    font-weight: bold;
-    width:  span(11 of 12);
-    padding-left: span(1 of 12 wide first);
-    text-align: center;
-  }
 }
+
 //Image Break Banner
 
 .image-break{
@@ -153,9 +147,9 @@ header {
 }
 
 .image-background{
-  height: 300px;
+  height: 600px;
   width: 100%;
-  background-image: url('/images/wedding photo.jpg');
+  background-image: url('/images/photo-group.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -169,8 +163,6 @@ header {
   @include span(5 of 12 first);
   margin-left: span(1 of 12 wide first);
   h2{
-    font-family: $h2-font;
-    color: white;
     width: span(2 of 5 first);
     padding-left: span(1 wide);
   }
@@ -184,6 +176,8 @@ header {
 .service-1-img{
   @include span(4 of 12 last);
   margin-right: span(1 of 12 wide last);
+  transform: rotate(4deg);
+  box-shadow: 4px 5px 14px rgba(0, 0, 0, 0.6);
 }
 
 .service-2-padding{
@@ -195,8 +189,6 @@ header {
   h2{
     width: span(2 of 5 last);
     padding-left: span(1 wide);
-    font-family: $h2-font;
-    color: white;
   }
   p{
     width: span(5 of 5);
@@ -209,6 +201,8 @@ header {
 .service-2-img{
   @include span(4 of 12 first);
   margin-left: span(1 of 12 wide first);
+  transform: rotate(-4deg);
+  box-shadow: 4px 5px 14px rgba(0, 0, 0, 0.6);
 }
 
 //Blurb Content
@@ -269,9 +263,8 @@ footer{
   h1.greeting{
     font-size: 3rem;
   }
-  .service{
+  .service-1{
     @include span(10 of 12 first);
-    padding-left: span(1 of 12 wide first);
     h2{
       width: span(10 of 10 first);
 
@@ -288,13 +281,14 @@ footer{
   .service-1-img{
     @include span(11 of 12);
     padding-left: span(1 of 12 wide first);
+    transform: none;
+    box-shadow: none;
   }
   .service-2{
     @include span(10 of 12 first);
     padding-left: span(1 of 12 wide first);
     h2{
       width: span(10 of 10 first);
-
       text-align: center;
     }
     p{
@@ -307,7 +301,10 @@ footer{
 
   .service-2-img{
     @include span(11 of 12);
-    padding-left: span(1 of 12 wide first)
+    padding-left: span(1 of 12 wide first);
+    margin-left: 0;
+    transform: none;
+    box-shadow: none;
   }
   .blurb-section{
     @include cf;
